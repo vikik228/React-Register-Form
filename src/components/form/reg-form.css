@@ -1,0 +1,16 @@
+.card {
+  width: 500px;
+  height: auto;
+  background: linear-gradient(#e66465, #9198e5);
+  border-radius: 15px;
+  margin: 0;
+  gap: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(230, 100, 101, 0.6), 0 0 50px rgba(145, 152, 229, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/*# sourceMappingURL=reg-form.css.map */

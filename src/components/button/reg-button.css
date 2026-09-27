@@ -1,0 +1,24 @@
+.reg-button {
+  width: 250px;
+  height: 70px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #baa6e5;
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: center;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-clip: padding-box;
+  color: rgb(238, 238, 238);
+  margin-bottom: 15px;
+  transition: ease-in-out 0.12s;
+}
+.reg-button:hover {
+  background-color: #beb1de;
+}
+.reg-button:active {
+  transform: scale(0.87);
+}
+
+/*# sourceMappingURL=reg-button.css.map */
