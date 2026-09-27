@@ -2,13 +2,16 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 
 async function enableMocking () {
-    if(!import.meta.env.DEV) {
-        return;
-    }
     const { worker } = await import("./mockServer/browser.ts");
 
     return worker.start({
         onUnhandledRequest: "bypass",
+        serviceWorker: {
+            url: '/React-Register-Form/mockServiceWorker.js',
+            options: {
+                scope: '/React-Register-Form/',
+            },
+        },
     });
 }
 
@@ -19,5 +22,3 @@ enableMocking().then(() => {
         </>,
     )
 });
-
-
