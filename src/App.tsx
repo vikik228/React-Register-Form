@@ -18,7 +18,10 @@ const router = createBrowserRouter(
             path: "/Auth",
             element: <AuthPage />
         }
-    ]
+    ],
+    {
+        basename: "/React-Register-Form"
+    }
 );
 
 function App() {
